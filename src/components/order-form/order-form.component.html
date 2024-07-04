@@ -1,7 +1,0 @@
-<form class="order-form__form" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
-    <app-input class="input_wide" label="Ваше имя" [formControl]="getFormControl('name')" appNoDots></app-input>
-    <app-input class="input_wide" label="Адрес доставки" [formControl]="getFormControl('address')"></app-input>
-    <app-input class="input_wide" label="Телефон" [formControl]="getFormControl('phone')"></app-input>
-
-    <app-button class="button_wide">Оформить заказ</app-button>
-</form>
