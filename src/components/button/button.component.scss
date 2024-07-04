@@ -1,0 +1,29 @@
+:host(.button_wide) {
+  width: 100%;
+
+  .button__element {
+    width: 100%;
+  }
+}
+
+:host(.button_narrow) {
+  .button__element {
+    min-width: unset;
+  }
+}
+
+.button__element {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent);
+  color: var(--dark-text);
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 2rem;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  line-height: 110%;
+  min-width: 20rem;
+}

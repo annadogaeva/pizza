@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+  padding: 2rem;
+  height: 100%;
+}
+
+.catalog-item__heading {
+  font-size: 1.8rem;
+  color: var(--secondary-text);
+  margin: 2.5rem 0 1.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.catalog-item__description {
+  margin: 0 0 1.8rem 0;
+  color: var(--dark-text);
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.catalog-item__img {
+  cursor: pointer;
+  height: 16rem;
+}
+
+.catalog-item__button {
+  margin-top: auto;
+}

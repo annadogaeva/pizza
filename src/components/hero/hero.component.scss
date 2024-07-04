@@ -1,0 +1,54 @@
+@import "variables";
+
+.hero__grid {
+  padding: 13rem 0;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.hero__slogan {
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 1.222;
+  margin-bottom: 5rem;
+}
+
+.hero__advantages {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  margin: 0 0 6rem 0;
+  padding: 0;
+}
+
+.hero__image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: map-get($breakpoints, lg)) {
+  .hero__grid {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+
+  .hero__slogan .text-accent {
+    display: inline;
+  }
+
+  .hero__body {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: map-get($breakpoints, sm))  {
+  .hero__advantages {
+    display: flex;
+    flex-direction: column;
+  }
+}

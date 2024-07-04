@@ -1,0 +1,21 @@
+:host(.input_wide) {
+  width: 100%;
+
+  .input__element {
+    width: 100%;
+  }
+}
+
+.input__element {
+  height: 6rem;
+  padding: 2.5rem;
+  border: 1px solid var(--main-text);
+
+  &::placeholder {
+    color: var(--main-text);
+  }
+}
+
+.invalid {
+  border: 1px solid red;
+}

@@ -1,0 +1,65 @@
+@import "../node_modules/normalize-scss/sass/normalize";
+@import "variables";
+@import "fonts";
+@include normalize();
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--main-bg);
+  font-family: "Muller", sans-serif;
+  color: var(--main-text);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+  display: block;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  color: var(--main-text);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (max-width: map-get($breakpoints, lg)) {
+  .container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+}

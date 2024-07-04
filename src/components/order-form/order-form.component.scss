@@ -1,0 +1,11 @@
+.order-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.order-form__validation {
+  color: var(--error);
+  display: block;
+  margin-top: 1rem;
+}
