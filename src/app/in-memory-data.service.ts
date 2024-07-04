@@ -1,4 +1,4 @@
-import { InMemoryDbService } from 'angular-in-memory-web-api';
+import {InMemoryDbService} from 'angular-in-memory-web-api';
 
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
@@ -55,7 +55,7 @@ export class InMemoryDataService implements InMemoryDbService {
 
     const orders: any[] = [];
 
-    return { products, orders };
+    return {products, orders};
   }
 
   genId<T extends { id: any }>(collection: T[]): number {

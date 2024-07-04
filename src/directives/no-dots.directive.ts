@@ -1,7 +1,7 @@
 import {Directive, HostListener} from '@angular/core';
 
 /**
- * Диретива не дает написать или вставить точки в поле ввода
+ * Директива не дает написать или вставить точки в поле ввода
  */
 @Directive({
   selector: '[appNoDots]',

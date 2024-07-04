@@ -11,5 +11,5 @@ import {HeaderComponent} from "../components/header/header.component";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-  title = 'pizza';
+
 }

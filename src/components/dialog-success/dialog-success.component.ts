@@ -18,6 +18,9 @@ export class DialogSuccessComponent {
 
   ref: DialogRef<{ text: string; }, boolean> = inject(DialogRef);
 
+  /**
+   * Получить текст диалога
+   */
   get text() {
     if (!this.ref.data) {
       return;

@@ -1,6 +1,7 @@
 import {inject, Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
+import {IOrder} from "./IOrder";
 
 @Injectable()
 export class OrderFormHttpService {
@@ -19,7 +20,7 @@ export class OrderFormHttpService {
    * Добавить заказ
    * @param order
    */
-  public addOrder(order: any): Observable<any> {
-    return this.#http.post<any>(this.#ordersUrl, order, this.#httpOptions)
+  public addOrder(order: IOrder): Observable<any> {
+    return this.#http.post<IOrder>(this.#ordersUrl, order, this.#httpOptions)
   }
 }

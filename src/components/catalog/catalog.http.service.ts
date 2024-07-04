@@ -1,7 +1,11 @@
 import {inject, Injectable} from '@angular/core';
 import {Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
+import {IProduct} from "./IProduct";
 
+/**
+ * Сервис запросов для каталога
+ */
 @Injectable()
 export class CatalogHttpService {
 
@@ -14,7 +18,7 @@ export class CatalogHttpService {
   /**
    * Получить товары с сервера
    */
-  getProducts(): Observable<any> {
-    return this.#http.get(this.#productsUrl)
+  getProducts(): Observable<IProduct[]> {
+    return this.#http.get<IProduct[]>(this.#productsUrl)
   }
 }
